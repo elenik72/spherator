@@ -1,4 +1,5 @@
 import js from '@eslint/js'
+import globals from 'globals'
 
 export default [
   js.configs.recommended,
@@ -15,4 +16,12 @@ export default [
   },
   {
     ignores: ['dist/*.js'],
-  }]
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        myCustomGlobal: 'readonly'
+      }
+    }
+  }
+]

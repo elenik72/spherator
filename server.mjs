@@ -38,9 +38,8 @@ const server = http.createServer(async (req, res) => {
     }
   }
 })
-
-// eslint-disable-next-line no-undef
+ 
 server.listen(PORT, () => {
-  // eslint-disable-next-line no-undef
+   
   console.log(`Server running on port ${PORT}`)
 })

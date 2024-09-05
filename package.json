@@ -1,8 +1,11 @@
 {
   "name": "spherator",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "lint": "eslint",

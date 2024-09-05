@@ -20,7 +20,7 @@ function generatePairs () {
   }
 
   names = shuffle(names)
-  const pairsList = document.getElementById('pairsList')
+  const pairsList = document.getElementById('pairs-list')
   pairsList.innerHTML = ''
 
   for (let i = 0; i < names.length; i += 2) {

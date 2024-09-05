@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "lint": "eslint",
-    "server": "yarn build && node server.mjs"
+    "server": "node server.mjs | yarn build --watch"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

@@ -13,8 +13,9 @@ const scriptReplacement = path => `<script src="${path}" type="module"></script>
 export default {
   input: 'src/generator.mjs',
   output: {
-    file: 'dist/bundle.js',
     format: 'es',
+    dir: 'dist',
+    entryFileNames: 'bundle-[hash].js',
   },
   plugins: [
     commonjs(),

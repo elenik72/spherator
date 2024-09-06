@@ -20,10 +20,10 @@ h2 {
 
 #pairs-list {
   margin: 0;
-  color: #111a4c;
-  font-size: x-large;
-  list-style-type: disclosure-closed;
-  padding-left: 30px;
+  color: #03188a;
+  font-size: xx-large;
+  list-style-type: square;
+  padding-left: 25px;
 }
 
 textarea {
@@ -41,5 +41,11 @@ button {
   background: #3F51B5;
   color: white;
   font-weight: 100;
-  box-shadow: 0px 3px 0px 0px #243386;
+  box-shadow: 0px 5px 0px 0px #243386;
+}
+
+button:active {
+  background-color: #3F51B4;
+  box-shadow: 0 0px #243386;
+  transform: translateY(4px);
 }

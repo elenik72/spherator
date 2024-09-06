@@ -15,13 +15,15 @@ export default [
     },
   },
   {
-    ignores: ['dist/*.js'],
     languageOptions: {
       globals: {
         ...globals.browser,
         ...globals.node,
         myCustomGlobal: 'readonly'
       }
-    }
+    },
+  },
+  {
+    ignores: ['dist/'],
   }
 ]

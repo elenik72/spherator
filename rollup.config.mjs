@@ -26,9 +26,9 @@ export default {
         try {
           const html = await fs.readFile(filePath, 'utf-8')
 
-          const jsFiles = files.js.reduce(
+          const jsFiles = files.js?.reduce(
             (coll, chunk) => coll.concat('\n' + scriptReplacement(chunk.fileName)), '')
-          const cssFiles = files.css.reduce(
+          const cssFiles = files.css?.reduce(
             (coll, chunk) => coll.concat('\n' + linkReplacement(chunk.fileName)), '')
           const updatedHtml = html
             .replace('%link%', cssFiles)

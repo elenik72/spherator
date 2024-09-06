@@ -1,5 +1,7 @@
 import { throttle } from './throttle'
 
+import './style.css'
+
 function shuffle (array) {
   return array
     .slice()
